@@ -1,1 +1,28 @@
-
+- type: markdown
+  attributes: 
+    value: ## Thank you for taking the time to provide feedback.
+- type: dropdown
+  attributes: 
+    label: Rating
+    description: How would you rate your overall experience?
+    multiple: false
+    options:
+      - Excellent
+      - Good
+      - Fair
+      - Poor
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Feedback
+    description: Please provide a reason for the above rating.
+- type: checkboxes
+  attributes:
+    label: Features
+    description: Please check one or more features that are important to you in a Hands-on lab.
+    options: 
+      - label: Explicit Instructions
+      - label: Minimal Content per Step
+      - label: Ability to Verify that a Task was done correctly.
+      
